@@ -3,7 +3,7 @@
 termux-setup-storage
 
 apt install -y git zsh
-git clone git://github.com/4679/oh-my-termux.git oh-my-termux
+git clone git@github.com:cyio/oh-my-termux.git oh-my-termux
 clear
 
 if [ -d "$HOME/.termux" ]; then
@@ -13,7 +13,7 @@ fi
 mv oh-my-termux/.termux $HOME/.termux
 
 apt update
-git clone https://github.com/cyio/oh-my-termux.git $HOME/.oh-my-zsh
+git clone git://github.com/robbyrussell/oh-my-zsh.git $HOME/.oh-my-zsh
 cp $HOME/.oh-my-zsh/templates/zshrc.zsh-template $HOME/.zshrc
 chsh -s zsh
 
